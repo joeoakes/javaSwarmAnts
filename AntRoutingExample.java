@@ -59,13 +59,14 @@ class Ant {
 }
 
 public class AntRoutingExample {
+
     public static void main(String[] args) {
-        int[][] grid = new int[10][10]; // Example grid size
+        int[][] grid = new int[10][10];
         // Set obstacle at (3,3)
         grid[3][3] = 1;
 
         Ant ant = new Ant(0, 0, grid);
-        int steps = 20; // Number of steps the ant will take
+        int steps = 20;
         for (int i = 0; i < steps; i++) {
             ant.move();
             System.out.println("Ant moved to: (" + ant.getX() + ", " + ant.getY() + ")");
