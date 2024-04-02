@@ -2,6 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/*
+simulate ants finding the shortest path between two points on a grid.
+The Ant class represents an ant which moves around the grid.
+The move() method determines the next position for the ant based on its current position and the grid.
+The getNeighbors() method returns a list of neighboring positions around the ant's current position.
+The pickNextPosition() method randomly selects one of the neighboring positions for the ant to move to.
+The AntRoutingExample class is the main class where the simulation is run. It initializes the grid, creates an ant, and moves it for a certain number of steps.
+ */
+
 class Ant {
     private int x;
     private int y;
